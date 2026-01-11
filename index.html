@@ -3,157 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master ABSOLUTE - Bot KingsAge</title>
+    <title>Master ABSOLUTE — Bot KingsAge</title>
     <style>
-        /* --- Body e Fundo Medieval --- */
+        /* ===== Corpo e Fundo ===== */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(180deg, #5a3a1a, #1a0f05);
-            color: #f5e6c8;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(180deg, #2e230f, #0f0a03);
+            color: #f9f2d9;
         }
 
-        /* --- Container centralizado --- */
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 30px auto;
-            padding: 25px;
-            background: rgba(0, 0, 0, 0.75); /* caixa semi-transparente */
+            padding: 30px;
+            background: rgba(20, 15, 5, 0.85);
             border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.5);
-            animation: fadeIn 1.5s ease forwards;
+            box-shadow: 0 0 20px rgba(0,0,0,0.6);
         }
 
-        /* --- Títulos com glow --- */
+        /* ===== Logo ===== */
+        .logo {
+            display: block;
+            margin: auto;
+            max-width: 300px;
+        }
+
         h1, h2 {
             text-align: center;
-            color: #FFD700;
-            text-shadow: 0 0 8px #FFD700, 0 0 16px #FFB000;
+            color: #ffd700;
+            text-shadow: 0 0 8px #ffd700, 0 0 16px #b8860b;
         }
 
-        /* --- Preço com glow verde --- */
+        /* ===== Preço ===== */
         .price {
             text-align: center;
-            font-size: 28px;
-            color: #7CFF00;
+            font-size: 30px;
             font-weight: bold;
-            text-shadow: 0 0 6px #7CFF00, 0 0 12px #3cff00;
-            margin: 15px 0;
+            color: #7cff00;
+            text-shadow: 0 0 6px #7cff00, 0 0 12px #3cff00;
+            margin: 20px 0;
         }
 
         .per-day {
             text-align: center;
             font-size: 18px;
-            color: #f5e6c8;
-            margin-bottom: 20px;
+            color: #e1d8b8;
+            margin-bottom: 25px;
         }
 
-        /* --- Lista de funcionalidades --- */
+        /* ===== Lista de Funcionalidades ===== */
         ul {
             list-style: none;
             padding: 0;
+            margin: 15px 0;
         }
-
+        ul li {
+            margin: 6px 0;
+            font-size: 18px;
+        }
         ul li::before {
-            content: "✔️ ";
+            content: "🛡️ ";
         }
 
-        /* --- Botão comprar --- */
+        /* ===== Botão Comprar ===== */
         .button {
             display: block;
-            width: 220px;
-            margin: 20px auto;
+            width: 260px;
+            margin: 25px auto;
             padding: 15px;
-            background: #FFD700;
+            background: #ffa500;
             color: #000;
             text-align: center;
-            border-radius: 5px;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
-            box-shadow: 0 0 8px #FFD700, 0 0 16px #FFB000;
+            font-size: 19px;
+            box-shadow: 0px 0px 8px #ffa500, 0px 0px 16px #cc8400;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-
         .button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 12px #FFD700, 0 0 24px #FFB000;
+            transform: scale(1.07);
+            box-shadow: 0px 0px 12px #ffb833, 0px 0px 24px #cc8400;
         }
 
-        /* --- Formulário --- */
+        /* ===== Formulário ===== */
         form {
             display: flex;
             flex-direction: column;
             gap: 10px;
             margin-top: 20px;
         }
-
         input, textarea {
             padding: 10px;
             border-radius: 5px;
             border: none;
+            font-size: 16px;
             width: 100%;
         }
 
-        /* --- Footer --- */
+        /* ===== Footer ===== */
         footer {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 28px;
             font-size: 14px;
             opacity: 0.8;
-        }
-
-        /* --- Fade-in container --- */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+
+        <!-- Logo inspirado em KingsAge -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBaMuuWlDk3NomzkexkuEEeUampxW2iu0WqUr9DwJLug&s" class="logo" alt="KingsAge Logo">
+
         <h1>Master ABSOLUTE</h1>
         <h2>Bot para KingsAge</h2>
 
         <p class="price">30 dias = 15€</p>
         <p class="per-day">(Apenas 0,50€ por dia!)</p>
 
-        <h3>Funcionalidades:</h3>
+        <h3>Funcionalidades Principais:</h3>
         <ul>
-            <li>Filtros na Torre</li>
-            <li>Filtros no Planeador</li>
-            <li>Planeador Avançado de Ataques</li>
-            <li>Ataques automáticos com milésimos de segundo</li>
-            <li>Apoios automáticos com milésimos de segundo</li>
-            <li>Pesquisar pesquisas automaticamente</li>
-            <li>Atalhos no Mercado configuráveis</li>
-            <li>Atalhos no Quartel configuráveis</li>
-            <li>Botões para Fake Mass</li>
-            <li>Filtrar mapa por tempo de viagem</li>
-            <li>Ver disponibilidade de sítios para Voos Planejados</li>
-            <li>Calcular pontos de alianças</li>
-            <li>Calcular pontos de jogadores</li>
-            <li>Tabela ranking evolução de jogadores e alianças</li>
-            <li>Extrair hora de fim da proteção de conquista</li>
+            <li>Filtros avançados na Torre e Planeador</li>
+            <li>Planeamento automático de Ataques</li>
+            <li>Execução de Apoios em milésimos</li>
+            <li>Pesquisas automáticas inteligentes</li>
+            <li>Atalhos configuráveis no Mercado e Quartel</li>
+            <li>Ferramentas de Fake Mass e tempo de viagem</li>
+            <li>Estatísticas de pontos de Alianças e Jogadores</li>
+            <li>Tabelas visuais de evolução em tempo real</li>
         </ul>
 
-        <a class="button" href="https://paypal.me/teunome/15" target="_blank">Comprar Agora - 15€</a>
+        <a class="button" href="https://paypal.me/teunome/15" target="_blank">➡️ Comprar Agora - 15€</a>
 
         <h3>Contato:</h3>
         <form action="mailto:Impureza331@gmail.com" method="POST" enctype="text/plain">
             <input type="email" name="email" placeholder="Seu Email" required>
-            <textarea name="mensagem" rows="4" placeholder="Sua Mensagem (opcional)"></textarea>
+            <textarea name="mensagem" rows="4" placeholder="Mensagem (opcional)"></textarea>
             <input type="submit" value="Enviar Pedido">
         </form>
 
-        <footer>
-            📩 Suporte: Impureza331@gmail.com
-        </footer>
+        <footer>📩 Suporte: Impureza331@gmail.com</footer>
+
     </div>
 </body>
 </html>
